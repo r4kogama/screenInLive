@@ -2,7 +2,7 @@
 
 La API de captura de pantalla incorpora la Media Capture y Streams API permitiendo al usuario seleccionar una pantalla o parte de una pantalla (como una ventana) para capturar como una transmisión de video. Esta transmisión se puede grabar o compartir con otras personas a través de la red.
 
-## Conceptos
+## Conceptos basicos
 
 Esta api presenta unicamente un metodo **MediaDevices.getDisplayMedia()**, dandole al usuario la posibiliad de seleccionar la pantalla o partes de la pantalla.
 
@@ -21,7 +21,7 @@ Este metodo devuelve una `promise` esta se resuelve con un MediaStream que conti
 
 ### MediaTrackConstraints
 
-La manera en que quieres que se vea la transmision:
+La manera en que quieres que se vea la transmisión:
 - Si se desea que se vea el cursor cuando esta en movimiento o siempre visible.
 - El tipo de pantalla a capturar.
 - Si la pantalla a trasmitir esta fuera del pantalla o no es visible en pantalla. Se configura de esta manera como valor true.
@@ -34,7 +34,7 @@ O el valor boleano **True** si lo que se esta capturando no se corresponde direc
 
 ### MediaTrackSupportedConstraints
 
-Admision a los 3 tipos de resticciones mediante booleanos **true**
+Admisión a los 3 tipos de resticciones mediante booleanos **true**
 
 ***Ejemplo de Constraints:***
 
@@ -50,3 +50,11 @@ let displayMediaOptions = {
             }
         };
 ```
+
+## Link
+
+Pincha aquí:
+
+[Screen Live](https://r4kogama.github.io/screenInLive/) 
+
+
